@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+      - name: Instalación de python
+        apt: pkg=python state=installed update_cache=true
+        become: True
+
