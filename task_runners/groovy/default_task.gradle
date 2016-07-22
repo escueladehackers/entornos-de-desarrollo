@@ -1,0 +1,9 @@
+task simpleTask
+
+simpleTask.description = "This is what's shown in the task list"
+simpleTask.group = "This is the heading for this task in the task list,"
+simpleTask.doLast {println "Do this last"}
+simpleTask.doFirst {println "Do this first"}
+
+
+defaultTasks simpleTask

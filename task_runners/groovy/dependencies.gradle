@@ -1,0 +1,26 @@
+task correr {
+    dependsOn "calentar"
+    finalizedBy "estirar"
+    doLast {
+        println "correr"
+    }
+}
+
+task  calentar {
+    doLast {
+        println "calentando"
+    }
+}
+
+task estirar {
+    doLast{
+        println "Que bueno que ya termino!"
+    }
+}
+
+task baniarse {
+    shouldRunAfter "estirar"
+    doLast{
+        println "Tomando un ducha"
+    }
+}

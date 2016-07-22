@@ -1,0 +1,7 @@
+task defaultTask {
+    description "Here's a task with a configuration block"
+    group "Some group"
+    doLast {
+        println "Here's the action"
+    }
+}
